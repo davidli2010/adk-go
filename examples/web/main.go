@@ -20,16 +20,32 @@ import (
 	"log"
 	"os"
 
+	"github.com/google/uuid"
 	"google.golang.org/adk/agent"
 	"google.golang.org/adk/agent/llmagent"
+	"google.golang.org/adk/artifactservice"
 	"google.golang.org/adk/cmd/restapi/services"
 	"google.golang.org/adk/cmd/web"
+	"google.golang.org/adk/llm"
 	"google.golang.org/adk/llm/gemini"
 	"google.golang.org/adk/sessionservice"
 	"google.golang.org/adk/tool"
 	"google.golang.org/adk/tool/geminitool"
 	"google.golang.org/genai"
 )
+
+func saveReportfunc(ctx agent.Context, llmResponse *llm.Response, llmResponseError error) (*llm.Response, error) {
+	if llmResponse == nil || llmResponse.Content == nil || llmResponseError != nil {
+		return llmResponse, llmResponseError
+	}
+	for _, part := range llmResponse.Content.Parts {
+		err := ctx.Artifacts().Save(uuid.NewString(), *part)
+		if err != nil {
+			return nil, err
+		}
+	}
+	return llmResponse, llmResponseError
+}
 
 func main() {
 	ctx := context.Background()
@@ -49,6 +65,7 @@ func main() {
 		Tools: []tool.Tool{
 			geminitool.GoogleSearch{},
 		},
+		AfterModel: []llmagent.AfterModelCallback{saveReportfunc},
 	})
 	if err != nil {
 		log.Fatalf("Failed to create agent: %v", err)
@@ -59,12 +76,14 @@ func main() {
 			"weather_time_agent": rootAgent,
 		},
 	)
+	artifactservice := artifactservice.Mem()
 
 	config := web.ParseArgs()
 	fmt.Println(config)
 	web.Serve(config, &web.ServeConfig{
-		SessionService: sessionService,
-		AgentLoader:    agentLoader,
+		SessionService:  sessionService,
+		AgentLoader:     agentLoader,
+		ArtifactService: artifactservice,
 	})
 
 }
