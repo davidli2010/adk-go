@@ -352,6 +352,12 @@ func mergeFunctionResponseEvents(functionResponseEvents []*session.Event) (*sess
 
 	// 1. Use the first event as the base
 	mergedEvent := cloneEvent(functionResponseEvents[0])
+	if mergedEvent == nil {
+		return nil, fmt.Errorf("mergedEvent based on the first event should not be nil")
+	}
+	if mergedEvent.Content == nil {
+		return nil, fmt.Errorf("content for the first event should not be nil")
+	}
 	partsInMergedEvent := mergedEvent.LLMResponse.Content.Parts
 
 	if len(partsInMergedEvent) == 0 {
@@ -475,6 +481,9 @@ const requestEUCFunctionCallName = "adk_request_credential"
 
 func isAuthEvent(ev *session.Event) bool {
 	c := utils.Content(ev)
+	if c == nil {
+		return false
+	}
 	for _, p := range c.Parts {
 		if p.FunctionCall != nil && p.FunctionCall.Name == requestEUCFunctionCallName {
 			return true
