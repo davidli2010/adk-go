@@ -136,6 +136,7 @@ type Context interface {
 **工具执行流程**:
 ```
 LLM响应 → 工具调用请求 → 工具上下文创建 → 工具执行 → 结果返回 → LLM处理
+```
 
 #### 3. **Model模块** (`model/`)
 **设计目的**: 提供统一的LLM访问接口
@@ -208,7 +209,7 @@ type Service interface {
 - 支持GCS（Google Cloud Storage）远程存储
 - 内存存储实现用于开发和测试
 
-#### 6. **Runner模块** (`runner/`)
+#### 7. **Runner模块** (`runner/`)
 **设计目的**: 代理运行时执行引擎
 
 **核心职责**:
@@ -217,7 +218,7 @@ type Service interface {
 - 集成各种服务(Session, Memory, Artifact)
 - 插件生命周期管理
 
-#### 7. **Server模块** (`server/`)
+#### 8. **Server模块** (`server/`)
 **设计目的**: 提供多种部署方式和通信协议
 
 **支持的协议**:
@@ -236,7 +237,7 @@ type Service interface {
 
 ### 基础设施模块
 
-#### 8. **内部实现** (`internal/`)
+#### 9. **内部实现** (`internal/`)
 包含各种内部实现细节，供核心模块使用：
 
 **核心内部模块**:
@@ -264,7 +265,7 @@ type Service interface {
 - `cli/`: CLI工具
 - `version/`: 版本信息
 
-#### 9. **遥测模块** (`telemetry/`)
+#### 10. **遥测模块** (`telemetry/`)
 **设计目的**: 提供OpenTelemetry集成，支持可观测性
 
 **核心功能**:
@@ -278,7 +279,7 @@ func RegisterSpanProcessor(processor sdktrace.SpanProcessor)
 - 事件发射到自定义处理器
 - 与Runner生命周期集成
 
-#### 10. **工具模块** (`util/`)
+#### 11. **工具模块** (`util/`)
 **设计目的**: 提供通用工具函数和实用程序
 
 **包含子模块**:
@@ -286,7 +287,7 @@ func RegisterSpanProcessor(processor sdktrace.SpanProcessor)
   - 指令字符串处理
   - 指令提供者接口
 
-#### 11. **命令行工具** (`cmd/`)
+#### 12. **命令行工具** (`cmd/`)
 **设计目的**: 提供命令行启动工具
 
 **主要组件**:
@@ -309,7 +310,7 @@ func RegisterSpanProcessor(processor sdktrace.SpanProcessor)
 - 日志和监控配置
 - 插件加载管理
 
-#### 12. **插件模块** (`plugin/`)
+#### 13. **插件模块** (`plugin/`)
 **设计目的**: 提供可扩展的插件系统
 
 **核心设计**:
@@ -346,7 +347,7 @@ type Config struct {
 - 线程安全的回调管理
 - 与Runner深度集成
 
-#### 13. **示例代码** (`examples/`)
+#### 14. **示例代码** (`examples/`)
 提供完整的使用示例:
 - `quickstart/`: 快速入门示例
   - 基础LLM代理创建
@@ -404,7 +405,7 @@ func GenerateContent(ctx context.Context, req *LLMRequest, stream bool) iter.Seq
 - 调用层：InvocationContext（调用上下文）
 - 执行层：Agent、Tool执行上下文
 
-#### 3. ** InvocationContext 详解**
+#### 3. **InvocationContext 详解**
 `InvocationContext`是代理调用的核心上下文，定义了一次完整的用户请求处理：
 
 ```
@@ -431,6 +432,7 @@ func GenerateContent(ctx context.Context, req *LLMRequest, stream bool) iter.Seq
 
 #### 4. **会话和状态管理**
 **会话状态层级**:
+
 ```
 Session State (会话状态)
 ├── User State (用户级别状态)
