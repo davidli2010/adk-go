@@ -7,7 +7,7 @@
 - **项目类型**: Go 语言项目 (Agent Development Kit)
 - **模块路径**: `google.golang.org/adk`
 - **Go 版本**: 1.24.4+
-- **主要依赖**: Google Cloud AI/Storage, Gemini, Gorilla Mux, OpenTelemetry
+- **主要依赖**: Google Cloud AI/Storage, Gemini, Gorilla Mux, OpenTelemetry, MCP SDK, SQLite, gRPC
 
 ## 构建、测试和Lint命令
 
