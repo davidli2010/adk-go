@@ -62,14 +62,14 @@
 ---
 
 #### 任务 2.4：Flow 执行引擎 (核心)
-- [ ] 2.4.1 阅读 `internal/llminternal/base_flow.go:97` - Flow.Run() 循环
-- [ ] 2.4.2 阅读 `internal/llminternal/base_flow.go:125` - runOneStep() 步骤
-- [ ] 2.4.3 分析 preprocess 请求预处理 (base_flow.go:245)
-- [ ] 2.4.4 分析 callLLM 模型调用 (base_flow.go:290)
-- [ ] 2.4.5 分析 postprocess 响应后处理 (base_flow.go:469)
-- [ ] 2.4.6 分析 handleFunctionCalls 工具调用 (base_flow.go:559)
+- [x] 2.4.1 阅读 `internal/llminternal/base_flow.go:97` - Flow.Run() 循环
+- [x] 2.4.2 阅读 `internal/llminternal/base_flow.go:125` - runOneStep() 步骤
+- [x] 2.4.3 分析 preprocess 请求预处理 (base_flow.go:245)
+- [x] 2.4.4 分析 callLLM 模型调用 (base_flow.go:290)
+- [x] 2.4.5 分析 postprocess 响应后处理 (base_flow.go:469)
+- [x] 2.4.6 分析 handleFunctionCalls 工具调用 (base_flow.go:559)
 
-**产出文档**：`docs/research/06_flow_engine.md`
+**产出文档**：`docs/research/06_flow_engine.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 3/6 (任务 2.1-2.3 ✓)
+- 阶段二：核心执行流程 - 4/6 (任务 2.1-2.4 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
