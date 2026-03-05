@@ -22,11 +22,11 @@
 ---
 
 #### 任务 1.2：理解事件溯源模式
-- [ ] 1.2.1 阅读 `session/session.go` 中的 Event 结构 (Event 定义)
-- [ ] 1.2.2 阅读 `session/inmemory.go` - 内存会话存储实现
-- [ ] 1.2.3 分析 Event 类型和用途
+- [x] 1.2.1 阅读 `session/session.go` 中的 Event 结构 (Event 定义)
+- [x] 1.2.2 阅读 `session/inmemory.go` - 内存会话存储实现
+- [x] 1.2.3 分析 Event 类型和用途
 
-**产出文档**：`docs/research/02_event_sourcing.md`
+**产出文档**：`docs/research/02_event_sourcing.md` ✓
 
 ---
 
@@ -212,7 +212,7 @@
 
 ## 最新进度
 
-- 阶段一：基础概念理解 - 1/5 (任务 1.1 ✓)
+- 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
 - 阶段二：核心执行流程 - 0/6
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
