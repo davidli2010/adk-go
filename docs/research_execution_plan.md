@@ -53,11 +53,11 @@
 ---
 
 #### 任务 2.3：LLMAgent 核心实现
-- [ ] 2.3.1 阅读 `agent/llmagent/llmagent.go:347` - llmAgent.run() 方法
-- [ ] 2.3.2 分析 Flow 对象创建过程
-- [ ] 2.3.3 理解 LLMAgent 的配置结构
+- [x] 2.3.1 阅读 `agent/llmagent/llmagent.go:347` - llmAgent.run() 方法
+- [x] 2.3.2 分析 Flow 对象创建过程
+- [x] 2.3.3 理解 LLMAgent 的配置结构
 
-**产出文档**：`docs/research/05_llmagent_core.md`
+**产出文档**：`docs/research/05_llmagent_core.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 2/6 (任务 2.1-2.2 ✓)
+- 阶段二：核心执行流程 - 3/6 (任务 2.1-2.3 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
