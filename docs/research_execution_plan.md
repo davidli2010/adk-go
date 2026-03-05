@@ -44,11 +44,11 @@
 ---
 
 #### 任务 2.2：Agent 执行入口
-- [ ] 2.2.1 阅读 `agent/agent.go:160` - Agent.Run() 接口实现
-- [ ] 2.2.2 分析 beforeAgentCallbacks 执行 (agent/agent.go:184)
-- [ ] 2.2.3 分析 afterAgentCallbacks 执行 (agent/agent.go:208)
+- [x] 2.2.1 阅读 `agent/agent.go:160` - Agent.Run() 接口实现
+- [x] 2.2.2 分析 beforeAgentCallbacks 执行 (agent/agent.go:184)
+- [x] 2.2.3 分析 afterAgentCallbacks 执行 (agent/agent.go:208)
 
-**产出文档**：`docs/research/04_agent_execution.md`
+**产出文档**：`docs/research/04_agent_execution.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 1/6 (任务 2.1 ✓)
+- 阶段二：核心执行流程 - 2/6 (任务 2.1-2.2 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
