@@ -11,11 +11,11 @@
 ### 阶段一：基础概念理解
 
 #### 任务 1.1：理解项目整体结构
-- [ ] 1.1.1 阅读 `agent/agent.go` - Agent 接口定义 (约 50 行)
-- [ ] 1.1.2 阅读 `agent/context.go` - InvocationContext 接口 (约 100 行)
-- [ ] 1.1.3 阅读 `session/session.go` - Session 和 State 接口 (约 150 行)
-- [ ] 1.1.4 阅读 `model/llm.go` - LLM 接口定义 (约 50 行)
-- [ ] 1.1.5 阅读 `tool/tool.go` - Tool 接口定义 (约 80 行)
+- [x] 1.1.1 阅读 `agent/agent.go` - Agent 接口定义 (约 50 行)
+- [x] 1.1.2 阅读 `agent/context.go` - InvocationContext 接口 (约 100 行)
+- [x] 1.1.3 阅读 `session/session.go` - Session 和 State 接口 (约 150 行)
+- [x] 1.1.4 阅读 `model/llm.go` - LLM 接口定义 (约 50 行)
+- [x] 1.1.5 阅读 `tool/tool.go` - Tool 接口定义 (约 80 行)
 
 **产出文档**：`docs/research/01_basic_interfaces.md`
 
@@ -212,7 +212,7 @@
 
 ## 最新进度
 
-- 阶段一：基础概念理解 - 0/5
+- 阶段一：基础概念理解 - 1/5 (任务 1.1 ✓)
 - 阶段二：核心执行流程 - 0/6
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
