@@ -33,13 +33,13 @@
 ### 阶段二：核心执行流程
 
 #### 任务 2.1：Runner 入口分析
-- [ ] 2.1.1 阅读 `runner/runner.go:114` - Run() 函数入口
-- [ ] 2.1.2 分析 Session 获取逻辑 (runner/runner.go:119)
-- [ ] 2.1.3 分析 Agent 查找逻辑 (runner/runner.go:131)
-- [ ] 2.1.4 分析上下文构建过程 (runner/runner.go:137-170)
-- [ ] 2.1.5 分析用户消息处理 (runner/runner.go:171-287)
+- [x] 2.1.1 阅读 `runner/runner.go:114` - Run() 函数入口
+- [x] 2.1.2 分析 Session 获取逻辑 (runner/runner.go:119)
+- [x] 2.1.3 分析 Agent 查找逻辑 (runner/runner.go:131)
+- [x] 2.1.4 分析上下文构建过程 (runner/runner.go:137-170)
+- [x] 2.1.5 分析用户消息处理 (runner/runner.go:171-287)
 
-**产出文档**：`docs/research/03_runner_entry.md`
+**产出文档**：`docs/research/03_runner_entry.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 0/6
+- 阶段二：核心执行流程 - 1/6 (任务 2.1 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
