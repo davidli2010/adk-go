@@ -96,10 +96,10 @@
 ### 阶段三：关键子系统
 
 #### 任务 3.1：FunctionTool 实现
-- [ ] 3.1.1 阅读 `tool/functiontool/functiontool.go` - FunctionTool 结构
-- [ ] 3.1.2 分析工具处理参数和结果返回
+- [x] 3.1.1 阅读 `tool/functiontool/functiontool.go` - FunctionTool 结构
+- [x] 3.1.2 分析工具处理参数和结果返回
 
-**产出文档**：`docs/research/09_function_tool.md`
+**产出文档**：`docs/research/09_function_tool.md` ✓
 
 ---
 
@@ -214,7 +214,7 @@
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
 - 阶段二：核心执行流程 - 6/6 (任务 2.1-2.6 ✓)
-- 阶段三：关键子系统 - 0/3
+- 阶段三：关键子系统 - 1/3 (任务 3.1 ✓)
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
 
