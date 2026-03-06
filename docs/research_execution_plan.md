@@ -74,12 +74,12 @@
 ---
 
 #### 任务 2.5：LLM 调用详解
-- [ ] 2.5.1 分析 BeforeModelCallbacks 执行时机
-- [ ] 2.5.2 分析 generateContent 调用流程
-- [ ] 2.5.3 分析 AfterModelCallbacks 执行
-- [ ] 2.5.4 理解流式响应处理 (iter.Seq2)
+- [x] 2.5.1 分析 BeforeModelCallbacks 执行时机
+- [x] 2.5.2 分析 generateContent 调用流程
+- [x] 2.5.3 分析 AfterModelCallbacks 执行
+- [x] 2.5.4 理解流式响应处理 (iter.Seq2)
 
-**产出文档**：`docs/research/07_llm_invocation.md`
+**产出文档**：`docs/research/07_llm_invocation.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 4/6 (任务 2.1-2.4 ✓)
+- 阶段二：核心执行流程 - 5/6 (任务 2.1-2.5 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
