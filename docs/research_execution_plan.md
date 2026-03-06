@@ -84,12 +84,12 @@
 ---
 
 #### 任务 2.6：工具调用流程
-- [ ] 2.6.1 分析 BeforeToolCallback 执行
-- [ ] 2.6.2 分析 tool.Run() 实际执行
-- [ ] 2.6.3 分析 AfterToolCallback 执行
-- [ ] 2.6.4 分析 FunctionResponse Event 创建
+- [x] 2.6.1 分析 BeforeToolCallback 执行
+- [x] 2.6.2 分析 tool.Run() 实际执行
+- [x] 2.6.3 分析 AfterToolCallback 执行
+- [x] 2.6.4 分析 FunctionResponse Event 创建
 
-**产出文档**：`docs/research/08_tool_invocation.md`
+**产出文档**：`docs/research/08_tool_invocation.md` ✓
 
 ---
 
@@ -213,7 +213,7 @@
 ## 最新进度
 
 - 阶段一：基础概念理解 - 2/5 (任务 1.1-1.2 ✓)
-- 阶段二：核心执行流程 - 5/6 (任务 2.1-2.5 ✓)
+- 阶段二：核心执行流程 - 6/6 (任务 2.1-2.6 ✓)
 - 阶段三：关键子系统 - 0/3
 - 阶段四：扩展系统 - 0/3
 - 阶段五：支撑模块 - 0/3
